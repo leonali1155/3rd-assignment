@@ -1,11 +1,220 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>3rd assignment</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <style>
+        .font-poppins {
+            font-family: 'Manrope', sans-serif;
+        }
+    </style>
+
+
 </head>
-<body>
-    
+
+<body class="font-poppins">
+    <header>
+        <div class="container mx-auto p-20">
+            <div class="carousel w-full">
+                <div id="slide1" class="carousel-item relative w-full">
+                    <img src="Images/1.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide4" class="btn btn-circle">❮</a>
+                        <a href="#slide2" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <div id="slide2" class="carousel-item relative w-full">
+                    <img src="Images/2.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide1" class="btn btn-circle">❮</a>
+                        <a href="#slide3" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <div id="slide3" class="carousel-item relative w-full">
+                    <img src="Images/3.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide2" class="btn btn-circle">❮</a>
+                        <a href="#slide4" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <div id="slide4" class="carousel-item relative w-full">
+                    <img src="Images/4.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide3" class="btn btn-circle">❮</a>
+                        <a href="#slide1" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+            </div>
+            <section class="text-center mt-10">
+                <h2 class="text-6xl font-bold">Professional Hockeys Club</h2>
+                <p class="mt-10">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor.
+                    Purus urna in sit nullam proin. </p>
+            </section>
+            <section>
+                <div class="text-center p-4 mt-10 flex flex-col lg:flex-row gap-40px p-4 lg:p-24">
+                    <div>
+                        <div class="radial-progress text-info" style="--value:87;" role="progressbar">87%</div>
+                        <h2>Prayer Facility</h2>
+                        <p>Amet consectetur. Condimentum dignissim adipiscing .</p>
+                    </div>
+                    <div>
+                        <div class="radial-progress text-secondary" style="--value:95;" role="progressbar">95%</div>
+                        <h2>Prayer Facility</h2>
+                        <p>Amet consectetur. Condimentum dignissim adipiscing .</p>
+                    </div>
+                    <div>
+                        <div class="radial-progress text-accent" style="--value:90;" role="progressbar">90%</div>
+                        <h2>Prayer Facility</h2>
+                        <p>Amet consectetur. Condimentum dignissim adipiscing .</p>
+                    </div>
+                    <div>
+                        <div class="radial-progress text-warning" style="--value:80;" role="progressbar">80%</div>
+                        <h2>Prayer Facility</h2>
+                        <p>Amet consectetur. Condimentum dignissim adipiscing .</p>
+                    </div>
+                </div>
+            </section>
+            <section class="text-center mt-10">
+                <h2 class="text-6xl font-bold">Program Sections</h2>
+                <p class="mt-10">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor.
+                    Purus urna in sit nullam proin. </p>
+            </section>
+            <section class="">
+                <div class="flex gap-7 justify-center flex-col lg:flex-row p-4 lg:p-24">
+                    <div class="card w-99 bg-base-100 shadow-xl image-full">
+                        <figure><img class="w-full" src="Images/2.png" alt="Shoes" /></figure>
+                        <div class="card-body text-center">
+                            <h2 class="card-title">Junior Program!</h2>
+                            <p class="">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit
+                                enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor
+                                congue sed et in.</p>
+                            <div class="card-actions justify-end">
+                                <button class="btn btn-error">Register Now!</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card w-99 bg-base-100 shadow-xl image-full">
+                        <figure><img src="Images/3.png" alt="Shoes" /></figure>
+                        <div class="card-body">
+                            <h2 class="card-title">Teenager Program!</h2>
+                            <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit
+                                enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor
+                                congue sed et in.</p>
+                            <div class="card-actions justify-end">
+                                <button class="btn btn-error">Register Now!</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card w-99 mt-2 bg-base-100 shadow-xl image-full lg:p-24 ">
+                    <figure><img class="w-full" src="Images/4.png" alt="Shoes" /></figure>
+                    <div class="card-body p-24">
+                        <h2 class="card-title">Professional Program</h2>
+                        <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit
+                            enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor
+                            congue sed et in.</p>
+                        <div class="card-actions">
+                            <button class="btn btn-error">Register Now!</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="text-center mt-10">
+                <h2 class="text-6xl font-bold">Program Sections</h2>
+                <p class="mt-10">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor.
+                    Purus urna in sit nullam proin. </p>
+            </section>
+            <section class="flex justify-between flex-col lg:flex-row p-4 lg:p-24 mb-8 gap-5 w-auto">
+                
+                    <div class="card w-99 bg-base-100 shadow-xl flex flex-col">
+                        <figure class="px-10 gap-5  pt-10 pb-5 w-auto">
+                            <img src="Images/5.png" alt="Shoes" class="rounded-xl  " />
+                            <h4>World Cup Flags Football</h4>
+                            <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. </p>
+                        </figure>
+                    </div>
+                
+                
+                    <div class="card w-97 bg-base-100 shadow-xl flex flex-col ">
+                        <figure class="px-10 gap-5 pt-10 pb-5 w-auto">
+                            <img src="Images/5.png" alt="Shoes" class="rounded-xl" />
+                            <h4>World Cup Flags Football</h4>
+                            <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. </p>
+                        </figure>
+                    </div>
+                
+            </section>
+            <div class="flex justify-between flex-col lg:flex-row p-4 lg:p-24 mb-8 gap-5 w-auto">
+                
+                    <div class="card w-99 bg-base-100 shadow-xl flex flex-col ">
+                        <figure class="px-10 gap-5 pt-10 pb-5 w-auto">
+                            <img src="Images/5.png" alt="Shoes" class="rounded-xl " />
+                            <h4>World Cup Flags Football</h4>
+                            <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. </p>
+                        </figure>
+                    </div>
+                
+                <div>
+                    <div class="card w-97 bg-base-100 shadow-xl flex flex-col ">
+                        <figure class="px-10 gap-5 pt-10 pb-5 w-auto">
+                            <img src="Images/5.png" alt="Shoes" class="rounded-xl" />
+                            <h4>World Cup Flags Football</h4>
+                            <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. </p>
+                        </figure>
+                    </div>
+                </div>
+            
+            </div>
+           
+            <section class="flex justify-between flex-col mt-0 p-0 lg:flex-row p-4 lg:p-24 mb-8 gap-5 mt-0 w-auto">
+                <div>
+                    <div class="card w-99 bg-base-100 shadow-xl flex flex-col ">
+                        <figure class="px-10 gap-5 pt-10 pb-5 w-auto">
+                            <img src="Images/5.png" alt="Shoes" class="rounded-xl " />
+                            <h4>World Cup Flags Football</h4>
+                            <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. </p>
+                        </figure>
+                    </div>
+                </div>
+                <div>
+                    <div class="card w-97 bg-base-100 shadow-xl flex flex-col ">
+                        <figure class="px-10 gap-5 pt-10 pb-3 w-auto">
+                            <img src="Images/5.png" alt="Shoes" class="rounded-xl" />
+                            <h4>World Cup Flags Football</h4>
+                            <p>Dolor sit amet consectetur. Ut urna diam quis sagittis. </p>
+                        </figure>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </header>
+    <main>
+
+    </main>
+    <footer>
+
+    </footer>
 </body>
+
 </html>
